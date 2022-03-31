@@ -15,6 +15,8 @@
 
 :root{
     font-size: 62.5%;
+    --text-color: #667085;
+    --main-color: #8E2424;
 }
 /* =-=-=-=-=-=-= RESET =-=-=-=-=-=-= */
 
@@ -72,7 +74,7 @@
 
 .c-header__button--signup {
     color: white;
-    background-color: #8E2424;
+    background-color: var(--main-color);
     border-radius: 8px;
 }
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
@@ -96,14 +98,14 @@
 
 .c-aboutus__p--about {
     font: normal 600 1.6rem/2.4rem 'Inter';
-    color: #8E2424;
+    color: var(--main-color);
 }
 .c-aboutus__p--why {
     font: normal 600 4.8rem/6rem 'Inter';
 }
 .c-aboutus__p--desc {
     font: normal 400 2rem/3rem 'Inter';
-    color: #667085;
+    color: var(--text-color);
 }
 /* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
@@ -119,7 +121,7 @@
 
 .c-aboutus__p--title {
     font: normal 600 6rem/7.2rem 'Inter';
-    color: #8E2424;
+    color: var(--main-color);
     margin-bottom: 12px;
 }
 .c-aboutus__p--subtitle {
@@ -129,7 +131,81 @@
 }
 .c-aboutus__p--desc2 {
     font: normal 400 1.6rem/2.4rem 'Inter';
-    color: #667085;
+    color: var(--text-color);
 }
 /* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
+.c-jobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    margin: 0 80px;
+    padding-top: 96px;
+    border-top: 2px solid #10182828;
+}
+/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+.c-jobs__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.c-jobs__p--title {
+    font: normal 500 1.4rem/2rem 'Inter';
+    color: var(--main-color);
+    padding: 4px 12px;
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+}
+.c-jobs__p--subtitle {
+    font: normal 600 3.6rem/4.4rem 'Inter';
+    color: #101828;
+}
+.c-jobs__p--desc {
+    font: normal 400 2rem/3rem 'Inter';
+    color: var(--text-color);
+}
+/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
+.c-jobs__jobs{
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    gap: 64px;
+}
+
+.c-jobs__jobsp--title {
+    font: normal 500 2rem/3rem 'Inter';
+    color: #101828;
+    margin-bottom: 32px;
+}
+
+.c-jobs__itemp--title {
+    font: normal 500 1.8rem/2.8rem 'Inter';
+    color: #101828;
+}
+.c-jobs__itemp--desc {
+    font: normal 500 1.6rem/2.4rem 'Inter';
+    color: var(--text-color);
+}
+
+.c-jobs__item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid #EAECF0;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.c-jobs__item--desc {
+    display: flex;
+    gap: 24px;
+}
+/* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
