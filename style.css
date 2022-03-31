@@ -1,0 +1,135 @@
+/* =-=-=-=-=-=-= FONTS IMPORT =-=-=-=-=-=-= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* =-=-=-=-=-=-= FONTS IMPORT =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= RESET =-=-=-=-=-=-= */
+*  {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;  
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 62.5%;
+}
+/* =-=-=-=-=-=-= RESET =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+.c-header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0.25% 10% ; */
+    margin: 18px 80px; 
+}
+/* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
+.c-header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.c-header__logo img {
+    width: 27px;
+}
+
+.c-header__logo p {
+    font: normal 500 1.8rem/2.4rem 'Inter';
+    margin-left: 8px;
+}
+/* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
+.c-header__nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.c-header__nav a {
+    font: normal 500 1.6rem/2.4rem 'Inter';
+    color: #667085;
+}
+/* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
+.gambiara {
+    width: 142px;
+}
+/* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
+.c-header__buttons {
+    display: flex; 
+}
+
+.c-header__button {
+    border: none;
+    font: normal 500 1.6rem/2.4rem 'Inter';
+    padding: 10px 18px;
+}
+
+.c-header__button--signin {
+    background-color: transparent;
+}
+
+.c-header__button--signup {
+    color: white;
+    background-color: #8E2424;
+    border-radius: 8px;
+}
+/* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= */
+.c-aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    margin: 96px 80px;
+    align-items: center;
+}
+/* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
+.c-aboutus__about {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+.c-aboutus__p--about {
+    font: normal 600 1.6rem/2.4rem 'Inter';
+    color: #8E2424;
+}
+.c-aboutus__p--why {
+    font: normal 600 4.8rem/6rem 'Inter';
+}
+.c-aboutus__p--desc {
+    font: normal 400 2rem/3rem 'Inter';
+    color: #667085;
+}
+/* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
+.c-aboutus__metrics {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 32px; */
+}
+
+.c-aboutus__item {
+    width: 280px;
+}
+
+.c-aboutus__p--title {
+    font: normal 600 6rem/7.2rem 'Inter';
+    color: #8E2424;
+    margin-bottom: 12px;
+}
+.c-aboutus__p--subtitle {
+    font: normal 500 1.8rem/2.8rem 'Inter';
+    color: #101828;
+    margin-bottom: 8px;
+}
+.c-aboutus__p--desc2 {
+    font: normal 400 1.6rem/2.4rem 'Inter';
+    color: #667085;
+}
+/* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= */
