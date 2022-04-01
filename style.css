@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
     /* margin: 0.25% 10% ; */
-    margin: 18px 80px; 
+    margin: 18px 112px; 
 }
 /* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
 .c-header__logo {
@@ -85,11 +85,11 @@
     display: flex;
     flex-direction: column;
     gap: 96px;
-    margin: 96px 80px;
+    margin: 96px 112px;
     align-items: center;
 }
 /* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
-.c-aboutus__about {
+.c-aboutus__header {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -142,7 +142,7 @@
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    margin: 0 80px;
+    margin: 0 112px 96px;
     padding-top: 96px;
     border-top: 2px solid #10182828;
 }
@@ -209,3 +209,97 @@
 }
 /* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= COMMENTS =-=-=-=-=-=-= */
+.c-comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    margin: 0px 112px 96px;
+    background-color: rgba(195, 25, 25, 0.03);
+    text-align: center;
+    border-radius: 16px;
+    gap: 32px;
+}
+
+/* =-=-=-=-=-=-= COMMENTS - HEADER =-=-=-=-=-=-= */
+.c-comments__p--title {
+    font: 600 1.6rem/2.4rem 'Inter';
+    color: var(--main-color);
+}
+.c-comments__p--desc {
+    font: 500 3.6rem/4.4rem 'Inter';
+    color: #101828;
+    margin-top: 16px;
+}
+/* =-=-=-=-=-=-= COMMENTS - HEADER =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= COMMENTS - COLLABS =-=-=-=-=-=-= */
+.c-comments__img {
+    margin-bottom: 16px;
+}
+.c-comments__collabsp--name{
+    font: 500 1.6rem/2.4rem 'Inter';
+    color: #101828;
+}
+.c-comments__collabsp--dev{
+    font: 400 1.4rem/2.0rem 'Inter';
+    color: var(--text-color);
+}
+/* =-=-=-=-=-=-= COMMENTS - COLLABS =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= COMMENTS =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= */
+.c-footer {
+    width: 100%;
+    background-color: rgba(249, 250, 251, 1);
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* =-=-=-=-=-=-= FOOTER - HEADER =-=-=-=-=-=-= */
+.c-footer__header {
+    margin-bottom: 40px;
+}
+.c-footer__h1--title {
+    font: 600 3.6rem/4.4rem 'Inter';
+    color: #101828;
+    margin-bottom: 15px;
+}
+.c-footer__p--subtitle {
+    font: 400 2rem/3rem 'Inter';
+    color: var(--text-color);
+}
+/* =-=-=-=-=-=-= FOOTER - HEADER =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= FOOTER - EMAIL =-=-=-=-=-=-= */
+.c-footer__emailcap input[type=email] {
+    padding: 12px 14px;
+    border: 1px solid #D0D5DD;
+    width: 360px;
+    border-radius: 10px;
+    margin-right: 16px;
+    font: 400 1.6rem/2.4rem 'Inter';
+    color: #101828;
+}
+
+.c-footer__emailcap input[type=submit]{
+    padding: 12px 14px;
+    border: none;
+    background-color: #8E2424;
+    color: white;
+    font: 400 1.6rem/2.4rem 'Inter';
+    border-radius: 16px;
+}
+/* =-=-=-=-=-=-= FOOTER - EMAIL =-=-=-=-=-=-= */
+
+.c-footer__p--text {
+    font: 400 1.6rem/2.4rem 'Inter';
+    color: var(--text-color);
+    margin-top: 32px;
+}
+/* =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= */
