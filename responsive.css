@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+    .c-header__nav ul {
+        display: none;
+    }
+    .c-header__button {
+        display: none;
+    }
+    .c-header__ion {
+        display: block;
+    }
+}
