@@ -24,9 +24,10 @@
 .c-header {
     display: flex; 
     align-items: center;
-    justify-content: space-between;
-    /* margin: 0.25% 10% ; */
-    margin: 18px 112px; 
+    margin: 18px auto; 
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
 }
 /* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
 .c-header__logo {
@@ -44,6 +45,10 @@
 }
 /* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
+.c-header__nav {
+    margin: 0 auto;
+}
+
 .c-header__nav ul {
     display: flex;
     gap: 32px;
@@ -54,9 +59,6 @@
     color: #667085;
 }
 /* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
-.gambiara {
-    width: 142px;
-}
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
 .c-header__buttons {
     display: flex; 
@@ -78,6 +80,12 @@
     border-radius: 8px;
 }
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= ICONS =-=-=-=-=-=-= */
+.c-header__ion {
+    font-size: 30px;
+    display: none;
+}
+/* =-=-=-=-=-=-= ICONS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
 
 /* =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= */
@@ -85,8 +93,11 @@
     display: flex;
     flex-direction: column;
     gap: 96px;
-    margin: 96px 112px;
+    margin: 96px auto;
+    max-width: 1200px;
+    width: 100%;
     align-items: center;
+    padding: 0 15px;
 }
 /* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
 .c-aboutus__header {
@@ -112,11 +123,11 @@
 .c-aboutus__metrics {
     display: flex;
     justify-content: space-between;
-    /* gap: 32px; */
+    width: 100%;
+    flex-wrap: wrap;
 }
-
 .c-aboutus__item {
-    width: 280px;
+    max-width: 280px;
 }
 
 .c-aboutus__p--title {
@@ -142,11 +153,13 @@
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    margin: 0 112px 96px;
-    padding-top: 96px;
+    padding: 96px 15px 0px;
     border-top: 2px solid #10182828;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 96px;
 }
-/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= JOBS - HEADER =-=-=-=-=-=-= */
 .c-jobs__header {
     display: flex;
     flex-direction: column;
@@ -169,13 +182,20 @@
     font: normal 400 2rem/3rem 'Inter';
     color: var(--text-color);
 }
-/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= JOBS - HEADER =-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-= JOBS - IMG =-=-=-=-=-=-= */
+.c-jobs__img img {
+    width: 100%;
+}
+/* =-=-=-=-=-=-= JOBS - IMG =-=-=-=-=-=-= */
 
 /* =-=-=-=-=-=-= JOBS =-=-=-=-=-=-= */
 .c-jobs__jobs{
     display: flex;
     flex-direction: column;
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
     gap: 64px;
 }
 
@@ -216,7 +236,9 @@
     flex-direction: column;
     align-items: center;
     padding: 64px;
-    margin: 0px 112px 96px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto 96px;
     background-color: rgba(195, 25, 25, 0.03);
     text-align: center;
     border-radius: 16px;
@@ -261,6 +283,10 @@
     text-align: center;
 }
 
+.c-footer__form {
+    padding: 0 15px;
+}
+
 /* =-=-=-=-=-=-= FOOTER - HEADER =-=-=-=-=-=-= */
 .c-footer__header {
     margin-bottom: 40px;
@@ -296,10 +322,10 @@
     border-radius: 16px;
 }
 /* =-=-=-=-=-=-= FOOTER - EMAIL =-=-=-=-=-=-= */
-
 .c-footer__p--text {
     font: 400 1.6rem/2.4rem 'Inter';
     color: var(--text-color);
     margin-top: 32px;
+    padding: 0 15px;
 }
 /* =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= */
