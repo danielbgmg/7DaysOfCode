@@ -11,6 +11,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Inter';
 }
 
 :root{
@@ -84,6 +85,7 @@
 .c-header__ion {
     font-size: 30px;
     display: none;
+    cursor: pointer;
 }
 /* =-=-=-=-=-=-= ICONS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */
@@ -108,21 +110,24 @@
 }
 
 .c-aboutus__p--about {
-    font: normal 600 1.6rem/2.4rem 'Inter';
+    font-size: max(1.6rem, 1.4vw);
+    font-weight: 600;
     color: var(--main-color);
 }
 .c-aboutus__p--why {
-    font: normal 600 4.8rem/6rem 'Inter';
+    font-weight: 600;
+    font-size: max(3.5rem, 3.6vw);
 }
 .c-aboutus__p--desc {
-    font: normal 400 2rem/3rem 'Inter';
+    font-size: max(1.6rem, 1.6vw);
     color: var(--text-color);
 }
 /* =-=-=-=-=-=-= ABOUT =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
 .c-aboutus__metrics {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -131,17 +136,19 @@
 }
 
 .c-aboutus__p--title {
-    font: normal 600 6rem/7.2rem 'Inter';
+    font-size: max(3.5rem, 4vw);
+    font-weight: 600;
     color: var(--main-color);
     margin-bottom: 12px;
 }
 .c-aboutus__p--subtitle {
-    font: normal 500 1.8rem/2.8rem 'Inter';
+    font-size: max(1.6rem, 1.4vw);
+    font-weight: 500;
     color: #101828;
     margin-bottom: 8px;
 }
 .c-aboutus__p--desc2 {
-    font: normal 400 1.6rem/2.4rem 'Inter';
+    font-size: max(1.4rem, 1.2vw);
     color: var(--text-color);
 }
 /* =-=-=-=-=-=-= METRICS =-=-=-=-=-=-= */
@@ -165,21 +172,24 @@
     flex-direction: column;
     align-items: center;
     gap: 18px;
+    text-align: center;
 }
 
 .c-jobs__p--title {
-    font: normal 500 1.4rem/2rem 'Inter';
+    font-size: max(1rem, 1.1vw);
+    font-weight: 500;
     color: var(--main-color);
     padding: 4px 12px;
     background-color: rgba(142, 36, 36, 0.05);
     border-radius: 16px;
 }
 .c-jobs__p--subtitle {
-    font: normal 600 3.6rem/4.4rem 'Inter';
+    font-size: max(2.5rem, 2.8vw);
+    font-weight: 600;
     color: #101828;
 }
 .c-jobs__p--desc {
-    font: normal 400 2rem/3rem 'Inter';
+    font-size: max(1.6rem, 1.6vw);
     color: var(--text-color);
 }
 /* =-=-=-=-=-=-= JOBS - HEADER =-=-=-=-=-=-= */
@@ -200,17 +210,20 @@
 }
 
 .c-jobs__jobsp--title {
-    font: normal 500 2rem/3rem 'Inter';
+    font-size: max(1.8rem, 1.6vw);
+    font-weight: 500;
     color: #101828;
     margin-bottom: 32px;
 }
 
 .c-jobs__itemp--title {
-    font: normal 500 1.8rem/2.8rem 'Inter';
+    font-size: max(1.6rem, 1.4vw);
+    font-weight: 500;
     color: #101828;
 }
 .c-jobs__itemp--desc {
-    font: normal 500 1.6rem/2.4rem 'Inter';
+    font-size: max(1.4rem, 1.2vw);
+    font-weight: 500;
     color: var(--text-color);
 }
 
@@ -247,11 +260,13 @@
 
 /* =-=-=-=-=-=-= COMMENTS - HEADER =-=-=-=-=-=-= */
 .c-comments__p--title {
-    font: 600 1.6rem/2.4rem 'Inter';
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--main-color);
 }
 .c-comments__p--desc {
-    font: 500 3.6rem/4.4rem 'Inter';
+    font-size: max(2.5rem, 2.8vw);
+    font-weight: 600;
     color: #101828;
     margin-top: 16px;
 }
@@ -262,11 +277,12 @@
     margin-bottom: 16px;
 }
 .c-comments__collabsp--name{
-    font: 500 1.6rem/2.4rem 'Inter';
+    font-size: 1.6rem/2.4rem;
+    font-weight: 500;
     color: #101828;
 }
 .c-comments__collabsp--dev{
-    font: 400 1.4rem/2.0rem 'Inter';
+    font-size: 1.4rem/2.0rem;
     color: var(--text-color);
 }
 /* =-=-=-=-=-=-= COMMENTS - COLLABS =-=-=-=-=-=-= */
@@ -292,24 +308,31 @@
     margin-bottom: 40px;
 }
 .c-footer__h1--title {
-    font: 600 3.6rem/4.4rem 'Inter';
+    font-size: max(2.5rem, 2.8vw);
+    font-weight: 600;
     color: #101828;
     margin-bottom: 15px;
 }
 .c-footer__p--subtitle {
-    font: 400 2rem/3rem 'Inter';
+    font-size: max(1.4rem, 1.4vw);;
     color: var(--text-color);
 }
 /* =-=-=-=-=-=-= FOOTER - HEADER =-=-=-=-=-=-= */
 
 /* =-=-=-=-=-=-= FOOTER - EMAIL =-=-=-=-=-=-= */
+.c-footer__emailcap {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+    justify-content: center;
+}
 .c-footer__emailcap input[type=email] {
     padding: 12px 14px;
     border: 1px solid #D0D5DD;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     border-radius: 10px;
-    margin-right: 16px;
-    font: 400 1.6rem/2.4rem 'Inter';
+    font: 400 1.6rem/2.4rem;
     color: #101828;
 }
 
@@ -318,12 +341,12 @@
     border: none;
     background-color: #8E2424;
     color: white;
-    font: 400 1.6rem/2.4rem 'Inter';
+    font: 400 1.6rem/2.4rem;
     border-radius: 16px;
 }
 /* =-=-=-=-=-=-= FOOTER - EMAIL =-=-=-=-=-=-= */
 .c-footer__p--text {
-    font: 400 1.6rem/2.4rem 'Inter';
+    font: 400 max(1.6rem 1.6vw);
     color: var(--text-color);
     margin-top: 32px;
     padding: 0 15px;
