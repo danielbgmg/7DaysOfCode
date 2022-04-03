@@ -1,11 +1,63 @@
-@media screen and (max-width: 800px) {
-    .c-header__nav ul {
-        display: none;
+@media screen and (max-width: 820px) {
+    .c-header {
+        position: sticky;
+        background-color: white;
+        overflow: hidden;
+        top: 0;
     }
-    .c-header__button {
-        display: none;
+    .c-aboutus {
+        margin: 50px 0;
+        gap: 50px;
     }
-    .c-header__ion {
+    .c-jobs {
+        padding-top: 50px;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+    .c-jobs__jobs {
+        gap: 32px;
+    }
+    .c-comments {
+        padding: 32px;
+        margin-bottom: 50px;
+    }
+    .c-footer {
+        padding: 50px 0;
+    }
+
+    /* Menu animado */
+    .c-header__icon {
         display: block;
+    }
+
+    .c-header__nav {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(128, 128, 128, 0.484);
+        backdrop-filter: blur(4px);
+        position: fixed;
+        top: 58px;
+        right: 0;
+        bottom: 0;
+        height: calc(100vh - 58px);
+        width: 100%;
+    }
+    .c-header__nav .open {
+        display: flex;
+    }
+
+    .c-header__nav .c-header__navlist {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .c-header__nav .c-header__navlist a {
+        color: var(--text-color-secondary);
+    }
+
+    .overflow {
+        overflow: hidden;
     }
 }
