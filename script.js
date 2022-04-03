@@ -1,6 +1,8 @@
+const menuIcon = document.querySelector('.c-header__icon')
 const nav = document.querySelector('.c-header__nav')
-const menu = document.querySelector('.c-header__icon')
+const body = document.querySelector('body')
 
-menu.addEventListener('click', () => {
-    nav.classList.toggle('teste')
+menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('open')
+    body.classList.toggle('overflow')
 })
