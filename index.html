@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ICONS -->
     <title>OptimusTech</title>
 </head>
 <body>
@@ -15,59 +19,59 @@
             <img src="img/logo.png" alt="O logo da empresa é o globo terrestre.">
             <p>OptimusTech</p>
         </div>
-        <nav class="c-header__nav open">
-            <ul>
+        <nav class="c-header__nav">
+            <ul class="c-header__navlist">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Recursos</a></li>
                 <li><a href="#">Sobre nós</a></li>
             </ul>
+            <div class="c-header__buttons"> 
+                <button class="c-header__button c-header__button--signin">
+                    Entrar
+                </button>
+                <button class="c-header__button c-header__button--signup">
+                    Cadastrar
+                </button>
+            </div>
         </nav>
-        <div class="c-header__buttons"> 
-            <button class="c-header__button c-header__button--signin">
-                Entrar
-            </button>
-            <button class="c-header__button c-header__button--signup">
-                Cadastrar
-            </button>
-        </div>
         <span class="c-header__icon">
             <ion-icon name="menu-outline" class="c-header__ion"></ion-icon>
         </span>
     </header>
-    <sectmgon class="c-aboutus">
+    <section class="c-aboutus">
         <div class="c-aboutus__header">
-            <span class="c-aboutus__p--about">Sobre nós</span>
-            <h1 class="c-aboutus__p--why">Por que somos diferentes?</h1>
-            <p class="c-aboutus__p--desc">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de <br> todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+            <span class="c-aboutus__text--about">Sobre nós</span>
+            <h2 class="c-aboutus__text--why">Por que somos diferentes?</h2>
+            <p class="c-aboutus__text--desc">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de <br> todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
         </div>
         <div class="c-aboutus__metrics">
             <div class="c-aboutus__item">
-                <h1 class="c-aboutus__p--title">400+</h1>
-                <h2 class="c-aboutus__p--subtitle">Projetos concluídos</h2>
-                <p class="c-aboutus__p--desc2">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+                <h2 class="c-aboutus__text--title">400+</h2>
+                <h3 class="c-aboutus__text--subtitle">Projetos concluídos</h3>
+                <p class="c-aboutus__text--desc2">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
             </div>
             <div class="c-aboutus__item">
-                <h1 class="c-aboutus__p--title">100+</h1>
-                <h2 class="c-aboutus__p--subtitle">Colaboradores</h2>
-                <p class="c-aboutus__p--desc2">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+                <h2 class="c-aboutus__text--title">100+</h2>
+                <h3 class="c-aboutus__text--subtitle">Colaboradores</h3>
+                <p class="c-aboutus__text--desc2">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
             </div>
             <div class="c-aboutus__item">
-                <h1 class="c-aboutus__p--title">20k</h1>
-                <h2 class="c-aboutus__p--subtitle">Downloads</h2>
-                <p class="c-aboutus__p--desc2">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+                <h2 class="c-aboutus__text--title">20k</h2>
+                <h3 class="c-aboutus__text--subtitle">Downloads</h3>
+                <p class="c-aboutus__text--desc2">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
             </div>
             <div class="c-aboutus__item">
-                <h1 class="c-aboutus__p--title">500+</h1>
-                <h2 class="c-aboutus__p--subtitle">Reviews 5 estrelas</h2>
-                <p class="c-aboutus__p--desc2">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+                <h2 class="c-aboutus__text--title">500+</h2>
+                <h3 class="c-aboutus__text--subtitle">Reviews 5 estrelas</h3>
+                <p class="c-aboutus__text--desc2">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
             </div>
         </div>
-    </sectmgon>
+    </section>
     <section class="c-jobs">
         <div class="c-jobs__header">
             <span class="c-jobs__p--title">Vagas abertas!</span>
-            <h1 class="c-jobs__p--subtitle">Estamos procurando por talentos</h1>
+            <h2 class="c-jobs__p--subtitle">Estamos procurando por talentos</h2>
             <p class="c-jobs__p--desc">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
         </div>
         <div class="c-jobs__img">
@@ -131,7 +135,7 @@
     <footer class="c-footer">
         <div class="c-footer__form">
             <div class="c-footer__header">
-                <h1 class="c-footer__h1--title">Acompanhe as nossas oportunidades</h1>
+                <h2 class="c-footer__h1--title">Acompanhe as nossas oportunidades</h2>
                 <p class="c-footer__p--subtitle">Seja o primeiro a saber quando novas vagas serão abertas!</p>
             </div>
             <div class="c-footer__emailcap">
@@ -144,11 +148,7 @@
 
 
     <!-- SCRIPT -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <!-- SCRIPT -->
-    <!-- ICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- ICONS -->
 </body>
 </html>
