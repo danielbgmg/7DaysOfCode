@@ -11,13 +11,18 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter';
 }
 
 :root{
     font-size: 62.5%;
     --text-color: #667085;
+    --text-color-secondary: #fff;
     --main-color: #8E2424;
+}
+
+body {
+    font-family: 'Inter';   
+    font-size: 1.6rem;
 }
 /* =-=-=-=-=-=-= RESET =-=-=-=-=-=-= */
 
@@ -25,14 +30,16 @@
 .c-header {
     display: flex; 
     align-items: center;
-    margin: 18px auto; 
+    
     max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
-    padding: 0 15px;
+    padding: 14px 15px;
 }
 /* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
 .c-header__logo {
     display: flex;
+    flex: 1;
     align-items: center;
 }
 
@@ -41,24 +48,32 @@
 }
 
 .c-header__logo p {
-    font: normal 500 1.8rem/2.4rem 'Inter';
+    font-size: 1.8rem;
+    font-weight: 500;
     margin-left: 8px;
 }
 /* =-=-=-=-=-=-= LOGO =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
-.c-header__nav {
-    margin: 0 auto;
+.c-header__nav{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    align-items: center;
 }
-
-.c-header__nav ul {
+.c-header__navlist {
     display: flex;
     gap: 32px;
 }
 
 .c-header__nav a {
-    font: normal 500 1.6rem/2.4rem 'Inter';
+    font-weight: 500;
     color: #667085;
 }
+
+.nav--open {
+    display: none;
+}
+
 /* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
 .c-header__buttons {
@@ -67,7 +82,8 @@
 
 .c-header__button {
     border: none;
-    font: normal 500 1.6rem/2.4rem 'Inter';
+    font-size: 1.6rem;
+    font-weight: 500;
     padding: 10px 18px;
 }
 
@@ -82,7 +98,7 @@
 }
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ICONS =-=-=-=-=-=-= */
-.c-header__ion {
+.c-header__icon {
     font-size: 30px;
     display: none;
     cursor: pointer;
@@ -109,16 +125,16 @@
     text-align: center;
 }
 
-.c-aboutus__p--about {
+.c-aboutus__text--about {
     font-size: max(1.6rem, 1.4vw);
     font-weight: 600;
     color: var(--main-color);
 }
-.c-aboutus__p--why {
+.c-aboutus__text--why {
     font-weight: 600;
     font-size: max(3.5rem, 3.6vw);
 }
-.c-aboutus__p--desc {
+.c-aboutus__text--desc {
     font-size: max(1.6rem, 1.6vw);
     color: var(--text-color);
 }
@@ -135,19 +151,19 @@
     max-width: 280px;
 }
 
-.c-aboutus__p--title {
+.c-aboutus__text--title {
     font-size: max(3.5rem, 4vw);
     font-weight: 600;
     color: var(--main-color);
     margin-bottom: 12px;
 }
-.c-aboutus__p--subtitle {
+.c-aboutus__text--subtitle {
     font-size: max(1.6rem, 1.4vw);
     font-weight: 500;
     color: #101828;
     margin-bottom: 8px;
 }
-.c-aboutus__p--desc2 {
+.c-aboutus__text--desc2 {
     font-size: max(1.4rem, 1.2vw);
     color: var(--text-color);
 }
