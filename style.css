@@ -16,7 +16,7 @@
 :root{
     font-size: 62.5%;
     --text-color: #667085;
-    --text-color-secondary: #fff;
+    --text-color-secondary: #000;
     --main-color: #8E2424;
 }
 
@@ -70,10 +70,6 @@ body {
     color: #667085;
 }
 
-.nav--open {
-    display: none;
-}
-
 /* =-=-=-=-=-=-= NAV =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
 .c-header__buttons {
@@ -85,6 +81,8 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     padding: 10px 18px;
+    font-family: 'Inter';
+    cursor: pointer;
 }
 
 .c-header__button--signin {
@@ -94,7 +92,7 @@ body {
 .c-header__button--signup {
     color: white;
     background-color: var(--main-color);
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 /* =-=-=-=-=-=-= BUTTONS =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ICONS =-=-=-=-=-=-= */
